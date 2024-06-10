@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+  display: flex;
+  /* weight :200,400,600 */
+}
+
+.container {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.info {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /* padding: 1rem; */
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#light {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.3rem;
+}
+.heading {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.para {
+  font-weight: 400;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card {
+  place-self: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(73, 136, 157, 0.5);
+  width: 350px;
+  height: 250px;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: #fff;
+}
+.card h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.card p {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.img {
+  margin-top: 2rem;
+  /* margin-bottom: 1rem; */
+  display: flex;
+  justify-content: right;
+}
+.img img {
+  width: 25%;
+}
+#card-1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+#card-2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+#card-3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+#card-4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .info {
+    font-size: 1.8rem;
+  }
+  .para {
+    margin: 0 15rem 0 15rem;
+    font-size: 1.2rem;
+  }
+  #card-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #card-4 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .container {
+    margin: 2rem 8rem 2rem 8rem;
+  }
+}
